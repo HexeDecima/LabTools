@@ -5,7 +5,7 @@ from tkinter import *
 from tkcalendar import DateEntry
 
 # READING DATA FROM ARDUINO
-arduino_data = pd.read_csv('files/arduino_data.cvs')
+arduino_data = pd.read_csv('arduino_data.cvs')
 
 # Convert columns to a datetime format
 arduino_data['Date'] = pd.to_datetime(arduino_data[['year', 'month', 'day']])
